@@ -1,0 +1,32 @@
+{
+  "name": {
+    "en": "NEPCO Qualification Requirements"
+  },
+  "description": {
+    "en": "Adopts requirement extension on the basis of European Single Procurement Document selection criteria section to the tender object and responses sections to bids, awards and contracts. Based on the EU's Core Criterion and Core Evidence Vocabulary (CCCEV), European Single Procurement Document Selection Criteria, EBRD Bidder Qualification Forms."
+  },
+  "documentationUrl": {
+    "en": "https://github.com/EBRD-Collaborator/nepco_qualification_requirements/"
+  },
+  "compatibility": [
+    "1.1"
+  ],
+  "codelists": [
+    "criteriaList.csv",
+    "dataType.csv",
+    "relatesTo.csv",
+    "requirementGroups.csv",
+    "requirementsList.csv",
+    "responseSource.csv"
+  ],
+  "schemas": [
+    "release-schema.json"
+  ],
+  "testDependencies": [
+    "https://raw.githubusercontent.com/open-contracting-extensions/ocds_requirements_extension/master/extension.json"
+  ],
+  "contactPoint": {
+    "name": "Borys Chernyshov",
+    "email": "borys@ppi-ebrd-uncitral.com"
+  }
+}
