@@ -1,211 +1,76 @@
 {
   "definitions": {
     "Criterion": {
-      "type": "object",
-      "title": "Criterion",
-      "description": "A criterion on which either bidders or items will be judged, evaluated or assessed.",
-      "required": [
-        "id"
-      ],
       "properties": {
-        "id": {
-          "title": "Identifier",
-          "description": "The identifier for this criterion. It must be unique and cannot change within the Open Contracting Process it is part of (defined by a single ocid). See the [identifier guidance](http://standard.open-contracting.org/latest/en/schema/identifiers/) for further details.",
-          "type": [
-            "string",
-            "integer"
-          ],
-          "minLength": 1
-        },
         "title": {
-          "title": "Title",
-          "description": "A title for this criterion.",
-          "type": [
-            "string",
-            "null"
-          ],
           "codelist": "criteriaList.csv",
           "openCodelist": false,
           "enum": [
             "generalYearlyTurnover",
             "averageYearlyTurnover",
             "otherEconomicOrFinancialRequirements",
-	    "specificAverageTurnover",
-	    "specificYearlyTurnover",
-	    "setUpOfEconomicOperator",
-	    "financialRatio",
-	    "professionalRiskInsurance",
-	    "numberOfManagerialStaff",
-	    "averageAnnualManpower",
-	    "educationalAndProfessionalQualifications",
-	    "toolsPlantOrTechnicalEquipment",
-	    "technicalFacilitiesAndMeasuresForEnsuringQuality",
-	    "studyAndResearchFacilities",
-	    "supplyChainManagement",
-	    "environmentalManagementMeasures",
-	    "performanceOfTheSpecifiedType",
-	    "forSupplyContractsCertificatesByQualityControlInstitutes",
-	    "certificatesByIndependentBodiesAboutQualityAssuranceStandards",
-	    "certificatesByIndependentBodiesAboutEnvironmentalManagementSystemsOrStandards",
-	    "allowanceOfChecks",
+            "specificAverageTurnover",
+            "specificYearlyTurnover",
+            "setUpOfEconomicOperator",
+            "financialRatio",
+            "professionalRiskInsurance",
+            "numberOfManagerialStaff",
+            "averageAnnualManpower",
+            "educationalAndProfessionalQualifications",
+            "toolsPlantOrTechnicalEquipment",
+            "technicalFacilitiesAndMeasuresForEnsuringQuality",
+            "studyAndResearchFacilities",
+            "supplyChainManagement",
+            "environmentalManagementMeasures",
+            "performanceOfTheSpecifiedType",
+            "forSupplyContractsCertificatesByQualityControlInstitutes",
+            "certificatesByIndependentBodiesAboutQualityAssuranceStandards",
+            "certificatesByIndependentBodiesAboutEnvironmentalManagementSystemsOrStandards",
+            "allowanceOfChecks",
             null
           ]
-          "minLength": 1
-        },
-        "description": {
-          "title": "Description",
-          "description": "A description of this criterion. Structured information should be provided in its other fields.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "minLength": 1
-        },
-        "source": {
-          "title": "Source",
-          "description": "Source of response to the requirements specified in the criterion. For example, responses might be submitted by tenderers or by an assessment committee at the procuringEntity.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "codelist": "responseSource.csv",
-          "openCodelist": false,
-          "enum": [
-            "tenderer",
-            "buyer",
-            "procuringEntity",
-            null
-          ]
-        },
-        "relatesTo": {
-          "title": "Related schema element",
-          "description": "The schema element that the criterion judges, evaluates or assesses. For example, the criterion might be defined against items or against bidders.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "codelist": "relatesTo.csv",
-          "openCodelist": false,
-          "enum": [
-            "tenderer",
-            "item",
-            null
-          ]
-        },
-        "relatedItem": {
-          "title": "Related item",
-          "description": "Where relatesTo = \"item\" this field must be populated with the id of the item in this tender section which the criterion relates to. Where relatesTo <> \"item\" this field should be omitted.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "minLength": 1
-        },
-        "requirementGroups": {
-          "title": "Requirement groups",
-          "description": "A list of requirement groups for this Criterion. A criterion is satisfied by one or more requirement groups being met. A requirement group is met when all requirements in the group are satisfied.",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/RequirementGroup"
-          },
-          "uniqueItems": true,
-          "minItems": 1
         }
-      },
-      "minProperties": 1
+      }
     },
     "RequirementGroup": {
-      "type": "object",
-      "title": "Title",
-      "description": "A requirement group is a set of requirements that must be fulfilled together to validate a criterion.",
-      "required": [
-        "id"
-      ],
-      "properties": {
-        "id": {
-          "title": "Identifier",
-          "description": "The identifier for this requirement group. It must be unique and cannot change within the Open Contracting Process it is part of (defined by a single ocid). See the [identifier guidance](http://standard.open-contracting.org/latest/en/schema/identifiers/) for further details.",
-          "type": "string",
-          "minLength": 1
-        },
-        "description": {
-          "title": "Description",
-          "description": "A description of this requirement group. Structured information should be provided in the requirements array.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "minLength": 1
-        },
-        "requirements": {
-          "title": "Requirements",
-          "description": "A list requirements which must all be satisfied for the requirement group to be met.",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Requirement"
-          },
-          "uniqueItems": true,
-          "minItems": 1
-        }
-      },
-      "minProperties": 1,
-	"codelist": "requirementGroups.csv",
-          "openCodelist": false,
-          "enum": [
-            "generalYearlyTurnoverForBidder",
-            "generalYearlyTurnoverForJVCA",
-            "financialInformationActualForPreviousYears",
-	    "financialInformationProjectedForTheNextTwoYears",
-	    "setupOfEconomicOperatorGeneral",
-	    "setupOfEconomicOperatorSpecific",
-	    "informationOnManagerailStaff",
-	    "candidate",
-	    "employer",
-	    "educationalQualifications",
-	    "professionalQualifications",
-	    "equipmentCapacity",
-	    "manufacturingCapacity",
-	    "forWorksContractsPerformanceOfWorksOfTheSpecifiedTypeOfBidder",
-	    "forSupplyContractsPerformanceOfDeliveriesOfTheSpecifiedTypeOfBidder",
-	    "forServiceContractsPerformanceOfServicesOfTheSpecifiedTypeOfBidder",
-	    "forWorksContractsPerformanceOfWorksOfTheSpecifiedTypeOfJVCA",
-	    "forSupplyContractsPerformanceOfDeliveriesOfTheSpecifiedTypeOfJVCA",
-	    "forServiceContractsPerformanceOfServicesOfTheSpecifiedTypeOfJVCA",
-            null
-          ]
+      "title": {
+        "title": "title",
+        "description": "A title for Requirement Group",
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1,
+        "codelist": "requirementGroups.csv",
+        "openCodelist": false,
+        "enum": [
+          "generalYearlyTurnoverForBidder",
+          "generalYearlyTurnoverForJVCA",
+          "financialInformationActualForPreviousYears",
+          "financialInformationProjectedForTheNextTwoYears",
+          "setupOfEconomicOperatorGeneral",
+          "setupOfEconomicOperatorSpecific",
+          "informationOnManagerailStaff",
+          "candidate",
+          "employer",
+          "educationalQualifications",
+          "professionalQualifications",
+          "equipmentCapacity",
+          "manufacturingCapacity",
+          "forWorksContractsPerformanceOfWorksOfTheSpecifiedTypeOfBidder",
+          "forSupplyContractsPerformanceOfDeliveriesOfTheSpecifiedTypeOfBidder",
+          "forServiceContractsPerformanceOfServicesOfTheSpecifiedTypeOfBidder",
+          "forWorksContractsPerformanceOfWorksOfTheSpecifiedTypeOfJVCA",
+          "forSupplyContractsPerformanceOfDeliveriesOfTheSpecifiedTypeOfJVCA",
+          "forServiceContractsPerformanceOfServicesOfTheSpecifiedTypeOfJVCA",
+          null
+        ]
+      }
     },
     "Requirement": {
-      "type": "object",
-      "title": "Requirement",
-      "description": "An atomic requirement. Requirements can specify the expected value that the response has to contain, or a range of threshold values within which the response has to fit in. The requirement may apply to a certain period of time.",
-      "required": [
-        "id"
-      ],
       "properties": {
-        "id": {
-          "title": "Requirement identifier",
-          "description": "The identifier for this requirement. It must be unique and cannot change within the Open Contracting Process it is part of (defined by a single ocid). See the [identifier guidance](http://standard.open-contracting.org/latest/en/schema/identifiers/) for further details.",
-          "type": "string",
-          "minLength": 1
-        },
         "title": {
-          "title": "Requirement title",
-          "description": "The title of this atomic requirement.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "minLength": 1
-        },
-        "description": {
-          "title": "Requirement description",
-          "description": "A free text description for this atomic requirement.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "minLength": 1,
-	"codelist": "requirementsList.csv",
+          "codelist": "requirementsList.csv",
           "openCodelist": false,
           "enum": [
             "generalTurnoverForYear1",
@@ -214,290 +79,96 @@
             "generalTurnoverForYear2InStateCurrency",
             "generalTurnoverForYear3",
             "generalTurnoverForYear3InStateCurrency",
-	    "namesOfAllPartnersOfAJVCA",
-	    "generalTurnoverForLeadPartnerOfJVCAForYear1",
-	    "generalTurnoverForLeadPartnerOfJVCAForYear1InStateCurrency",
-	    "generalTurnoverForPartnerOfJVCAForYear1",
-	    "generalTurnoverForPartnerOfJVCAForYear1InStateCurrency",
-	    "averageYearlyTurnover",
-	    "totalAssets",
-	    "currentAssets",
-	    "totalLiabilities",
-	    "currentLiabilities",
-	    "profitsBeforeTaxes",
-	    "profitsAfterTaxes",
-	    "netWorth",
-	    "totalRevenues",
-	    "specificAverageTurnover",
-	    "specificYearlyTurnover",
-	    "setupOfEconomicOperator",
-	    "financialRatio",
-	    "theInsuredAmountInItsProfessionalRiskIndemnityInsurance",
-	    "company",
-	    "project",
-	    "position",
-	    "name",
-	    "totalWorkExperienceInYears",
-	    "totalWorkExperienceInYearsInSimilarWorks",
-	    "totalWorkExperienceInYearsInSimilarWorksAsManager",
-	    "candidate",
-	    "dateOfBirth",
-	    "professionalQualifications",
-	    "address",
-	    "jobTitleOfCandidate",
-	    "yearsWithThePresentEmployer",
-	    "telephone",
-	    "contact",
-	    "summaryOfTheProfessionalEducationAndTraining",
-	    "summaryOfTheProfessionalExperienceOverTheLast10Years",
-	    "equipmentTypeAndCharacteristics",
-	    "number",
-	    "model",
-	    "yearOfManufacture",
-	    "capacity",
-	    "source",
-	    "currentLocation",
-	    "detailsOfCurrentCommitments",
-	    "nameOfOwner",
-	    "manufacturingLinesAndCharacteristics",
-	    "briefDescription",
-	    "yearOfInstallation",
-	    "currentStatus",
-	    "currentCommitments",
-	    "typeOfAccess",
-	    "addressOfOwner",
-	    "nameOfContact",
-	    "titleOfContact",
-	    "telephoneOfContact",
-	    "faxOfContact",
-	    "emailOfContact",
-	    "facility",
-	    "supplyChainManagementType",
-	    "supplyChainManagementCharacteristics",
-	    "environmentalManagementMeasuresType",
-	    "environmentalManagementMeasuresCharacteristics",
-	    "nameOfContract",
-	    "valueIn",
-	    "status",
-	    "role",
-	    "similarity",
-	    "timeForCompletionInMonths",
-	    "notes",
-	    "partner",
+            "namesOfAllPartnersOfAJVCA",
+            "generalTurnoverForLeadPartnerOfJVCAForYear1",
+            "generalTurnoverForLeadPartnerOfJVCAForYear1InStateCurrency",
+            "generalTurnoverForPartnerOfJVCAForYear1",
+            "generalTurnoverForPartnerOfJVCAForYear1InStateCurrency",
+            "averageYearlyTurnover",
+            "totalAssets",
+            "currentAssets",
+            "totalLiabilities",
+            "currentLiabilities",
+            "profitsBeforeTaxes",
+            "profitsAfterTaxes",
+            "netWorth",
+            "totalRevenues",
+            "specificAverageTurnover",
+            "specificYearlyTurnover",
+            "setupOfEconomicOperator",
+            "financialRatio",
+            "theInsuredAmountInItsProfessionalRiskIndemnityInsurance",
+            "company",
+            "project",
+            "position",
+            "name",
+            "totalWorkExperienceInYears",
+            "totalWorkExperienceInYearsInSimilarWorks",
+            "totalWorkExperienceInYearsInSimilarWorksAsManager",
+            "candidate",
+            "dateOfBirth",
+            "professionalQualifications",
+            "address",
+            "jobTitleOfCandidate",
+            "yearsWithThePresentEmployer",
+            "telephone",
+            "contact",
+            "summaryOfTheProfessionalEducationAndTraining",
+            "summaryOfTheProfessionalExperienceOverTheLast10Years",
+            "equipmentTypeAndCharacteristics",
+            "number",
+            "model",
+            "yearOfManufacture",
+            "capacity",
+            "source",
+            "currentLocation",
+            "detailsOfCurrentCommitments",
+            "nameOfOwner",
+            "manufacturingLinesAndCharacteristics",
+            "briefDescription",
+            "yearOfInstallation",
+            "currentStatus",
+            "currentCommitments",
+            "typeOfAccess",
+            "addressOfOwner",
+            "nameOfContact",
+            "titleOfContact",
+            "telephoneOfContact",
+            "faxOfContact",
+            "emailOfContact",
+            "facility",
+            "supplyChainManagementType",
+            "supplyChainManagementCharacteristics",
+            "environmentalManagementMeasuresType",
+            "environmentalManagementMeasuresCharacteristics",
+            "nameOfContract",
+            "valueIn",
+            "status",
+            "role",
+            "similarity",
+            "timeForCompletionInMonths",
+            "notes",
+            "partner",
             "certificateByQualityControlInstitutes",
             "certificatesByIndependentBodiesAboutQualityAssuranceStandards",
             "certificateByQualityControlInstitutesAboutEnvironmentalManagement",
-	    "allowanceOfChecks",
+            "allowanceOfChecks",
             null
           ]
-        },
-        "dataType": {
-          "title": "Requirement datatype",
-          "description": "The data type in which the requirement response must be provided.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "codelist": "dataType.csv",
-          "openCodelist": false,
-          "enum": [
-            "string",
-            "date-time",
-            "number",
-            "integer",
-            "boolean",
-            null
-          ]
-        },
-        "pattern": {
-          "title": "Response validation pattern",
-          "description": "A regular expression against which validate the requirement response.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "minLength": 1
-        },
-        "expectedValue": {
-          "title": "Expected value",
-          "description": "Used to state the requirement when the response must be particular value.",
-          "type": [
-            "string",
-            "integer",
-            "number",
-            "boolean",
-            "null"
-          ],
-          "minLength": 1
-        },
-        "minValue": {
-          "title": "Minimum value",
-          "description": "Used to state the lower bound of the requirement when the response must be within a certain range.",
-          "type": [
-            "integer",
-            "number",
-            "null"
-          ]
-        },
-        "maxValue": {
-          "title": "Maximum value",
-          "description": "Used to state the upper bound of the requirement when the response must be within a certain range.",
-          "type": [
-            "integer",
-            "number",
-            "null"
-          ]
-        },
-        "period": {
-          "title": "Period",
-          "description": "Used to specify a particular period the requirement applies to, for example the bidder's turnover in a given year.",
-          "$ref": "#/definitions/Period"
         }
-      },
-      "minProperties": 1
+      }
     },
     "RequirementResponse": {
-      "type": "object",
-      "title": "Requirement Response",
-      "description": "An assertion that responds to a single requirement. A requirement response provides the value for the requirement and may provide the period to which it applies.",
-      "required": [
-        "id",
-        "requirement"
-      ],
       "properties": {
-        "id": {
-          "title": "Identifier",
-          "description": "The identifier for this requirement response. It must be unique and cannot change within the Open Contracting Process it is part of (defined by a single ocid). See the [identifier guidance](http://standard.open-contracting.org/latest/en/schema/identifiers/) for further details.",
-          "type": "string",
-          "minLength": 1
-        },
-        "title": {
-          "title": "Title",
-          "description": "A title for this requirement response.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "minLength": 1
-        },
-        "description": {
-          "title": "Description",
-          "description": "A description of this requirement response. Structured information should be provided in its other fields.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "minLength": 1
-        },
         "value": {
-          "title": "Value",
-          "description": "The value of this requirement response. The value must be of the type defined in the requirement.dataType field.",
           "type": [
             "string",
             "integer",
             "number",
             "boolean",
+            "object",
             "null"
-          ],
-          "minLength": 1
-        },
-        "period": {
-          "title": "Period",
-          "description": "The period which the requirement response is applicable to.",
-          "$ref": "#/definitions/Period"
-        },
-        "requirement": {
-          "title": "Related requirement",
-          "description": "The id and title of the requirement which the response is applicable to.",
-          "$ref": "#/definitions/RequirementReference"
-        },
-        "relatedTenderer": {
-          "title": "Related tenderer",
-          "description": "Where this requirement response relates to a tenderer and is provided by the buyer or procuring entity this field should be used to reference the entry in the parties section for the tenderer the response relates to.",
-          "$ref": "#/definitions/OrganizationReference"
-        }
-      },
-      "minProperties": 1
-    },
-    "RequirementReference": {
-      "type": "object",
-      "title": "Requirement reference",
-      "description": "Used to cross reference a requirement.",
-      "required": [
-        "id"
-      ],
-      "properties": {
-        "id": {
-          "title": "Requirement ID",
-          "description": "The id of the requirement which the response is applicable to.",
-          "type": "string",
-          "minLength": 1
-        },
-        "title": {
-          "title": "Requirement title",
-          "description": "The title of the requirement which the response is applicable to.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "minLength": 1
-        }
-      },
-      "minProperties": 1
-    },
-    "Bid": {
-      "properties": {
-        "requirementResponses": {
-          "title": "Requirement responses",
-          "description": "If the requirements extension is also in use, the detailed responses of this bid to the tender requirements can be specified here.",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/RequirementResponse"
-          },
-          "uniqueItems": true,
-          "minItems": 1
-        }
-      }
-    },
-    "Tender": {
-      "properties": {
-        "criteria": {
-          "title": "Criteria",
-          "description": "A list of criteria on which either bidders or items will be judged, evaluated or assessed.",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Criterion"
-          },
-          "uniqueItems": true,
-          "minItems": 1
-        }
-      }
-    },
-    "Award": {
-      "properties": {
-        "requirementResponses": {
-          "title": "Requirement responses",
-          "description": "A list of the detailed responses of this award to the requirements of the tender.",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/RequirementResponse"
-          },
-          "uniqueItems": true,
-          "minItems": 1
-        }
-      }
-    },
-    "Contract": {
-      "properties": {
-        "requirementResponses": {
-          "title": "Requirement responses",
-          "description": "A list of the detailed responses of this contract to the requirements of the tender.",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/RequirementResponse"
-          },
-          "uniqueItems": true,
-          "minItems": 1
+          ]
         }
       }
     }
