@@ -47,7 +47,7 @@ number,Number,Applicable to equipmentCapacity and manufacturingCapacity Requirem
 model,Model,Applicable to equipmentCapacity and manufacturingCapacity Requirement Groups
 yearOfManufacture,Year Of Manufacture,Applicable to equipmentCapacity Requirement Group
 capacity,Capacity,Applicable to equipmentCapacity and manufacturingCapacity Requirement Groups
-"source,Source,Applicable to equipmentCapacity and manufacturingCapacity Requirement Groups. The following abbreviation shall be used: O – owned; R – rented; L- leased; SM – specially manufactured"
+source,Source,Applicable to equipmentCapacity and manufacturingCapacity Requirement Groups. The following abbreviation shall be used: O – owned; R – rented; L- leased; SM – specially manufactured
 currentLocation,Current Location,Applicable to equipmentCapacity Requirement Group
 detailsOfCurrentCommitments,Details Of Current Commitments,Applicable to equipmentCapacity and manufacturingCapacity Requirement Groups
 nameOfOwner,Name Of Owner,Applicable to equipmentCapacity and manufacturingCapacity Requirement Groups
