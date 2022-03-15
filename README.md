@@ -1,3 +1,13 @@
+# Description
+This Extension is proposed for Jordan Public Procurement NEPCO-JONEPS System. This System is not in full accordance with EU Procurement Laws, so direct use of European Single Procurement Document (ESPD) is not possible. This Extension allows to maintain all Qualification Information for Bidder in ESPD-like manner for non-EU countries. Main approach - the Requirements Extension is selected due to use of this model (Criterion -> Requirement Group -> Requirements) in European Bank for Reconstruction and Development digital tools, which are intended to monitor Tender procedures automatically and keep procedures transparent. This does not allow to use ESPD model directly, as it has two additional nested lewels, which can't be parsed in existring tools architecture. 
+
+This leads to use Requirement Extension, based on CCCEV model (see below) as framework, ESPD Selection Criteria Part and existing EBRD registration Forms for Bidder combined. In this case, all required information can be stored and handled easily. All Criteria are taken from ESPD Selection Criteria part, Requirement Groups and Requirements are proposed in accordance with current NEPCO-JONEPS Registration Froms, based on EBRD ones. The main goal is to store presented flat tables fields as Requirements and tables as Requirement Groups. This allows to restore Tables from JSON format easily. Adding Requirement Groups to Criteria is based on general considerations and bussiness logic. Full model in table view with all connections is presented in Standard Bidding Document folder, in Excel file.
+
+This approach allows to use existing EBRD digital tools for Tender monitoring for non-EU countries and Procurement Systems, where ESPD and corresponding Laws are not fully implemented (e.g., Jordan, Tunisia). The main difference with existing Requirements Extension is mandatory naming for Criteria, Requirement Groups and Requirements, presented in corresponding codelists. 
+
+
+
+
 # Requirements
 
 The requirements extension is based on the EU's [Core Criterion and Core Evidence Vocabulary (CCCEV)](https://joinup.ec.europa.eu/node/153001) model for communicating criteria and responses.
@@ -107,7 +117,7 @@ Below is an example of requirements specified against both an item and a bidder 
               },
               {
                 "id": "0002-002-02",
-                "title": "Professional qualifications :",
+                "title": "Professional qualificationsÂ :",
                 "description": "list professional qualification relevant to the Contract and the proposed position",
                 "dataType": "string",
                 "expectedValue": "related qualifications"
