@@ -6,7 +6,7 @@
     "en": "Adopts requirement extension on the basis of European Single Procurement Document selection criteria section to the tender object and responses sections to bids, awards and contracts. Based on the EU's Core Criterion and Core Evidence Vocabulary (CCCEV), European Single Procurement Document Selection Criteria, EBRD Bidder Qualification Forms."
   },
   "documentationUrl": {
-    "en": "https://github.com/EBRD-Collaborator/nepco_qualification_requirements/"
+    "en": "https://github.com/EBRD-Open-Government-Lab-Kyiv/nepco_qualification_requirements/"
   },
   "compatibility": [
     "1.1"
