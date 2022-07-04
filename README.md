@@ -56,161 +56,166 @@ Below is an example of requirements specified against both an item and a bidder 
 
 ```json
 {
-  "tender": {
-    "criteria": [
-      {
-        "id": "0001",
-        "title": "General yearly turnover",
-        "description": "General yearly turnover must be at least 1M EUR",
-        "source": "tenderer",
-        "relatesTo": "item",
-        "relatedItem": "item1",
-        "requirementGroups": [
-          {
-            "id": "0001-001",
-            "title": "General Yearly Turnover for bidder",
-            "requirements": [
-              {
-                "id": "0001-001-01",
-                "title": "General Turnover for year 1",
-                "description": "Value of general turnover",
-                "dataType": "value",
-                "value": {"amount": "100000", "currency":"EUR"}
-              }
+   "tender":{
+      "criterion":[
+         {
+            "id":"0001",
+            "title":"General yearly turnover",
+            "description":"General yearly turnover must be at least 1M EUR",
+            "source":"tenderer",
+            "relatesTo":"item",
+            "relatedItem":"item1",
+            "requirementGroups":[
+               {
+                  "id":"0001-001",
+                  "title":"General Yearly Turnover for bidder",
+                  "requirements":[
+                     {
+                        "id":"0001-001-01",
+                        "title":"General Turnover for year 1",
+                        "description":"Value of general turnover",
+                        "dataType":"value",
+                        "value":{
+                           "amount":"100000",
+                           "currency":"EUR"
+                        }
+                     }
+                  ]
+               }
             ]
-          }
-        ]
-      },
-      {
-        "id": "0002",
-        "title": "Number of managerial staff",
-        "description": "There are should be at least 5 managerial staff persons with minimum 3 years working experience in current role",
-        "source": "tenderer",
-        "relatesTo": "item",
-        "relatedItem": "item1",
-        "requirementGroups": [
-          {
-            "id": "0002-001",
-            "title": "Information on managerail staff",
-            "requirements": [
-              {
-                "id": "0002-001-01",
-                "title": "Total work experience (years)",
-                "description": "Total work experience (years) of managerial staff",
-                "dataType": "integer",
-                "pattern": "[0-9]*",
-                "minValue": 3
-              }
+         },
+         {
+            "id":"0002",
+            "title":"Number of managerial staff",
+            "description":"There are should be at least 5 managerial staff persons with minimum 3 years working experience in current role",
+            "source":"tenderer",
+            "relatesTo":"item",
+            "relatedItem":"item1",
+            "requirementGroups":[
+               {
+                  "id":"0002-001",
+                  "title":"Information on managerail staff",
+                  "requirements":[
+                     {
+                        "id":"0002-001-01",
+                        "title":"Total work experience (years)",
+                        "description":"Total work experience (years) of managerial staff",
+                        "dataType":"integer",
+                        "pattern":"[0-9]*",
+                        "minValue":3
+                     }
+                  ]
+               },
+               {
+                  "id":"0002-002",
+                  "title":"Average annual manpower",
+                  "requirements":[
+                     {
+                        "id":"0002-002-01",
+                        "title":"Name of candidate",
+                        "description":"Name of candidate",
+                        "dataType":"string",
+                        "pattern":"[a-zA-Z ]*",
+                        "minValue":"John Doe"
+                     },
+                     {
+                        "id":"0002-002-02",
+                        "title":"Professional qualifications :",
+                        "description":"list professional qualification relevant to the Contract and the proposed position",
+                        "dataType":"string",
+                        "expectedValue":"related qualifications"
+                     }
+                  ]
+               }
             ]
-          },
-          {
-            "id": "0002-002",
-            "title": "Average annual manpower",
-            "requirements": [
-              {
-                "id": "0002-002-01",
-                "title": "Name of candidate",
-                "description": "Name of candidate",
-                "dataType": "string",
-                "pattern": "[a-zA-Z ]*",
-                "minValue": "John Doe"
-              },
-              {
-                "id": "0002-002-02",
-                "title": "Professional qualifications :",
-                "description": "list professional qualification relevant to the Contract and the proposed position",
-                "dataType": "string",
-                "expectedValue": "related qualifications"
-              }
+         },
+         {
+            "id":"0003",
+            "title":"Tools, plant or technical equipment",
+            "description":"SC_Abilities_2_(Facilities,___)",
+            "source":"tenderer",
+            "relatesTo":"tenderer",
+            "requirementGroups":[
+               {
+                  "id":"0003-001",
+                  "title":"Equipment Capacity",
+                  "requirements":[
+                     {
+                        "id":"0003-001-01",
+                        "title":"Equipment type and characteristics",
+                        "description":"description of equipment",
+                        "dataType":"string",
+                        "pattern":"[a-zA-Z ]*",
+                        "expectedValue":"Type: , Characteristics: "
+                     }
+                  ]
+               }
             ]
-          }
-        ]
-      },
-      {
-        "id": "0003",
-        "title": "Tools, plant or technical equipment",
-        "description": "SC_Abilities_2_(Facilities,___)",
-        "source": "tenderer",
-        "relatesTo": "tenderer",
-        "requirementGroups": [
-          {
-            "id": "0003-001",
-            "title": "Equipment Capacity",
-            "requirements": [
-              {
-                "id": "0003-001-01",
-                "title": "Equipment type and characteristics",
-                "description": "description of equipment",
-                "dataType": "string",
-                "pattern": "[a-zA-Z ]*",
-                "expectedValue": "Type: , Characteristics: "
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+         }
+      ]
+   }
 }
 ```
 
 Below is an example of responses which meet the above requirements:
 
 ```json
-  "bids": {
-      "details": [
-        {
-          "id": "1",
-          "requirementResponses": [
-            {
-              "id": "T1",
-              "value": { # new type
-                "amount": 5541314.23,
-                "currency": "EUR"
-              },
-              "period": {
-                "startDate": "2013-04-03T00:00:00Z",
-                "endDate": "2014-04-03T00:00:00Z"
-              }
-              "requirement": {
-                "id": "T1",
-                "title": "FY 1"
-              }
-            },
-            {
-              "id": "T2",
-              "value": {
-                "amount": 9231341.00,
-                "currency": "EUR"
-              },
-              "period": {
-                "startDate": "2014-04-03T00:00:00Z",
-                "endDate": "2015-04-03T00:00:00Z"
-              }
-              "requirement": {
-                "id": "T2",
-                "title": "FY 2"
-              }
-            },
-            {
-              "id": "T3",
-              "value": {
-                "amount": 9941927.15,
-                "currency": "EUR"
-              },
-              "period": {
-                "startDate": "2015-04-03T00:00:00Z",
-                "endDate": "2016-04-03T00:00:00Z"
-              }
-              "requirement": {
-                "id": "T3",
-                "title": "FY 3"
-              }
-            }
-          ]
-        }
+  {
+   "bids":{
+      "details":[
+         {
+            "id":"1",
+            "requirementResponses":[
+               {
+                  "id":"T1",
+                  "value":{
+                     "amount":5541314.23,
+                     "currency":"EUR"
+                  },
+                  "period":{
+                     "startDate":"2013-04-03T00:00:00Z",
+                     "endDate":"2014-04-03T00:00:00Z"
+                  },
+                  "requirement":{
+                     "id":"T1",
+                     "title":"FY 1"
+                  }
+               },
+               {
+                  "id":"T2",
+                  "value":{
+                     "amount":9231341.00,
+                     "currency":"EUR"
+                  },
+                  "period":{
+                     "startDate":"2014-04-03T00:00:00Z",
+                     "endDate":"2015-04-03T00:00:00Z"
+                  },
+                  "requirement":{
+                     "id":"T2",
+                     "title":"FY 2"
+                  }
+               },
+               {
+                  "id":"T3",
+                  "value":{
+                     "amount":9941927.15,
+                     "currency":"EUR"
+                  },
+                  "period":{
+                     "startDate":"2015-04-03T00:00:00Z",
+                     "endDate":"2016-04-03T00:00:00Z"
+                  },
+                  "requirement":{
+                     "id":"T3",
+                     "title":"FY 3"
+                  }
+               }
+            ]
+         }
       ]
-    }
+   }
+}
 ```
 
 ## Further extensions
