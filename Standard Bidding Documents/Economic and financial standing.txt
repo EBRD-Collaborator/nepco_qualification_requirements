@@ -1,0 +1,400 @@
+{
+    "Economic and financial standing" : [
+        {
+            "id":"1",
+            "title": "General yearly turnover",
+            "description": "SC-General_Yearly_Turnover",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "1",
+                    "title":"General Yearly Turnover for bidder",
+                    "requirements": [
+                        {
+                            "id":"1",
+                            "title": "General Turnover for year 1",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "dataType": "value",
+                            "value": {"amount": "F5.1.2", "currency":"F5.1.3"}
+                        },
+                        {
+                            "id":"2",
+                            "title": "General Turnover for year 1 in state currency",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "dataType": "value",
+                            "value": {"amount": "F5.1.2", "currency":"F5.1.3"}
+                        },
+                        {
+                            "id":"3",
+                            "title": "General Turnover for year 2",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "dataType": "value",
+                            "value": {"amount": "F5.1.2", "currency":"F5.1.3"}
+                        },
+			{
+                            "id":"4",
+                            "title": "General Turnover for year 2 in state currency",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "dataType": "value",
+                            "value": {"amount": "F5.1.2", "currency":"F5.1.3"}
+                        },
+                        {
+                            "id":"5",
+                            "title": "General Turnover for year 3",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "dataType": "value",
+                            "value": {"amount": "F5.1.2", "currency":"F5.1.3"}
+                        },
+                        
+                            "id":"6",
+                            "title": "General Turnover for year 3 in state currency",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "dataType": "value",
+                            "value": {"amount": "F5.1.2", "currency":"F5.1.3"}
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "title": "General Yearly Turnover for JVCA",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "Names of all partners of a JVCA",
+                            "description": "All partners",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "dataType": "value",
+                            "value": {"amount": "F5.1.2", "currency":"F5.1.3"}
+                        },
+                        {
+                            "id": "2",
+                            "title": "General Turnover for Lead partner of JVCA for year 1",
+                            "description": "",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "dataType": "value",
+                            "value": {"amount": "F5.1.2", "currency":"F5.1.3"}
+                        },
+                        {
+                            "id": "3",
+                            "title": "General Turnover for Lead partner of JVCA for year 1 in state currency",
+                            "description": "",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "dataType": "value",
+                            "value": {"amount": "F5.1.2", "currency":"F5.1.3"}
+                        },                        
+                        {
+                            "id": "4",
+                            "title": "General Turnover for partner of JVCA for year 1",
+                            "description": "",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "dataType": "value",
+                            "value": {"amount": "F5.1.2", "currency":"F5.1.3"}
+                        },
+                        {
+                            "id": "4",
+                            "title": "General Turnover for partner of JVCA for year 1 in state currency",
+                            "description": "",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "dataType": "value",
+                            "value": {"amount": "F5.1.2", "currency":"F5.1.3"}
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"2",
+            "title": "Average yearly turnover",
+            "description": "SC-General_Average_Turnover",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "",
+                    "requirements": [
+                        {
+                            "id":"1",
+                            "title": "Average yearly turnover for period",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "dataType": "value",
+                            "value": {"amount": "F5.1.2", "currency":"F5.1.3"}
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Other economic or financial requirements",
+            "description":"SC-Other_economic_or_financial",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "1",
+                    "title": "Financial Information Actual for previous years",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "Total assets",
+                            "description": "Total assets for period",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.9.2", "endDate": "F5.9.2"},
+                            "expectedValue": "F5.9.1"
+                        },
+                        {
+                            "id": "2",
+                            "title": "Current assets",
+                            "description": "Current assets for period",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.9.2", "endDate": "F5.9.2"},
+                            "expectedValue": "F5.9.1"
+                        },
+                        {
+                            "id": "3",
+                            "title": "Total liabilities",
+                            "description": "Total liabilities for period",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.9.2", "endDate": "F5.9.2"},
+                            "expectedValue": "F5.9.1"
+                        },
+                        {
+                            "id": "4",
+                            "title": "Current liabilities",
+                            "description": "Current liabilities for period",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.9.2", "endDate": "F5.9.2"},
+                            "expectedValue": "F5.9.1"
+                        },
+                        {
+                            "id": "5",
+                            "title": "Profits before taxes",
+                            "description": "Profits before taxes for period",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.9.2", "endDate": "F5.9.2"},
+                            "expectedValue": "F5.9.1"
+                        },
+                        {
+                            "id": "6",
+                            "title": "Profits after taxes",
+                            "description": "Profits after taxes for period",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.9.2", "endDate": "F5.9.2"},
+                            "expectedValue": "F5.9.1"
+                        },
+                        {
+                            "id": "7",
+                            "title": "Net Worth",
+                            "description": "Net Worth for period",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+                        {
+                            "id": "8",
+                            "title": "Total Revenues ",
+                            "description": "Total Revenues  for period",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "title": "Financial Information Projected for the next two years",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "Total assets",
+                            "description": "Total assets for period",
+                            "dataType": "string",
+                            "period": {"startDate":"F5.9.3", "endDate":"F5.9.3"},
+                            "expectedValue": "F5.9.1"
+                        },
+                        {
+                            "id": "2",
+                            "title": "Current assets",
+                            "description": "Current assets for period",
+                            "dataType": "string",
+                            "period": {"startDate":"F5.9.3", "endDate":"F5.9.3"},
+                            "expectedValue": "F5.9.1"
+                        },
+                        {
+                            "id": "3",
+                            "title": "Total liabilities",
+                            "description": "Total liabilities for period",
+                            "dataType": "string",
+                            "period": {"startDate":"F5.9.3", "endDate":"F5.9.3"},
+                            "expectedValue": "F5.9.1"
+                        },
+                        {
+                            "id": "4",
+                            "title": "Current liabilities",
+                            "description": "Current liabilities for period",
+                            "dataType": "string",
+                            "period": {"startDate":"F5.9.3", "endDate":"F5.9.3"},
+                            "expectedValue": "F5.9.1"
+                        },
+                        {
+                            "id": "5",
+                            "title": "Profits before taxes",
+                            "description": "Profits before taxes for period",
+                            "dataType": "string",
+                            "period": {"startDate":"F5.9.3", "endDate":"F5.9.3"},
+                            "expectedValue": "F5.9.1"
+                        },
+                        {
+                            "id": "6",
+                            "title": "Profits after taxes",
+                            "description": "Profits after taxes for period",
+                            "dataType": "string",
+                            "period": {"startDate":"F5.9.3", "endDate":"F5.9.3"},
+                            "expectedValue": "F5.9.1"
+                        },
+                        {
+                            "id": "7",
+                            "title": "Net Worth",
+                            "description": "Net Worth for period",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+                        {
+                            "id": "8",
+                            "title": "Total Revenues ",
+                            "description": "Total Revenues  for period",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "title": "Specific Average Turnover",
+            "description":"SC-Specific_Average_Turnover",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "Specific Average Turnover",
+                            "period": {"startDate": "", "endDate": ""},
+                            "description": "Description of specific area",
+                            "dataType": "string",
+                            "expectedValue": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "title": "Specific Yearly Turnover",
+            "description": "SC-Specific_Average_Turnover",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "Specific Yearly Turnover",
+                            "period": {"startDate": "", "endDate": ""},
+                            "description": "Description of specific area",
+                            "dataType": "string",
+                            "expectedValue": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "title": "Set up of economic operator",
+            "description":"SC-Setup_of_economic_operator",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "1",
+                    "title": "SC-Setup_of_economic_operator - General",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "SC-Setup_of_economic_operator",
+                            "period": {"startDate": "", "endDate": ""},
+                            "description": "Description",
+                            "dataType": "string",
+                            "expectedValue": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "title": "SC-Setup_of_economic_operator - Specific",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "SC-Setup_of_economic_operator",
+                            "period": {"startDate": "", "endDate": ""},
+                            "description": "Description",
+                            "dataType": "string",
+                            "expectedValue": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "title": "Financial ratio",
+            "description":"SC-Financial_ratios",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "Financial ratio",
+                            "period": {"startDate": "", "endDate": ""},
+                            "dataType": "string",
+                            "expectedValue": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "title": "Professional_risk_insurance",
+            "description": "SC-Professional_risk_insurance",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "The insured amount in its professional risk indemnity insurance is the following:",
+                            "period": {"startDate": "", "endDate": ""},
+                            "dataType": "string",
+                            "expectedValue": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

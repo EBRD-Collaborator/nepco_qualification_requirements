@@ -1,0 +1,821 @@
+{
+    "Technical and professional ability" : [
+        {
+            "id":"1",
+            "title": "Number of managerial staff",
+            "description":"SC-Abilities_5_(Staff)",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "",
+		    "title": "Information on managerail staff",
+                    "requirements": [
+			{
+                            "id": "1",
+                            "title": "Company",
+                            "description": "state Company",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+			{
+                            "id": "2",
+                            "title": "Project",
+                            "description": "state Project",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+                        {
+                            "id":"3",
+                            "title": "Position",
+                            "description": "Position of managerial staff",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "expectedValue": "F5.5.1"
+                        },
+                        {
+                            "id": "4",
+                            "title": "Name",
+                            "description": "Name of managerial staff",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "expectedValue": "F5.5.2"
+                        },
+                        {
+                            "id": "5",
+                            "title": "Total work experience (years)",
+                            "description": "Total work experience (years) of managerial staff",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "expectedValue": "F5.5.3"
+                        },
+                        {
+                            "id": "6",
+                            "title": "Total work experience (years) In similar works",
+                            "description": "Total work experience (years) In similar works of managerial staff",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "expectedValue": "F5.5.4"
+                        },
+                        {
+                            "id": "7",
+                            "title": "Total work experience (years) As manager of similar works (years)",
+                            "description": "Total work experience (years) As manager of similar works (years) of managerial staff",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "expectedValue": "F5.5.5"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Average annual manpower",
+            "description": "SC-Abilities_5_(Staff)",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "1",
+                    "title":"Candidate",
+                    "requirements": [
+			{
+                            "id": "1",
+                            "title": "Company",
+                            "description": "state Company",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+			{
+                            "id": "2",
+                            "title": "Project",
+                            "description": "state Project",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+                        {
+                            "id": "3",
+                            "title": "Position",
+                            "description": "state position",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "expectedValue": "F5.6.1"
+                        },
+                        {
+                            "id": "4",
+                            "title": "Candidate",
+                            "description": "state Prime or Alternate",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "expectedValue": "F5.6.2"
+                        },
+                        {
+                            "id": "5",
+                            "title": "Name of candidate",
+                            "description": "Name of candidate",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "expectedValue": "F5.6.3.2"
+                        },
+                        {
+                            "id": "6",
+                            "title": "Date of birth:",
+                            "description": "Candidates's Date of birth:",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "expectedValue": "F5.6.3.3"
+                        },
+                        {
+                            "id": "7",
+                            "title": "Professional qualifications :",
+                            "description": "list professional qualification relevant to the Contract and the proposed position",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "expectedValue": "F5.6.3.5"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "title": "Employer",
+                    "requirements": [
+			{
+                            "id": "1",
+                            "title": "Company",
+                            "description": "state Company",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+			{
+                            "id": "2",
+                            "title": "Project",
+                            "description": "state Project",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+                        {
+                            "id": "3",
+                            "title": "Name of the employer",
+                            "description": "Present employment Name of the employer",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "expectedValue": "F5.6.4.1"
+                        },
+                        {
+                            "id": "4",
+                            "title": "Address of the employer",
+                            "description": "Present employment Address of the employer",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "expectedValue": "F5.6.4.2"
+                        },
+                        {
+                            "id": "5",
+                            "title": "Job title of candidate:",
+                            "description": "insert the current job title",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "expectedValue": "F5.6.4.3"
+                        },
+                        {
+                            "id": "6",
+                            "title": "Years with the present employer:",
+                            "description": "insert the number of years",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "expectedValue": "F5.6.4.4"
+                        },
+                        {
+                            "id": "7",
+                            "title": "Telephone",
+                            "description": "insert the Telephone number",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "expectedValue": "F5.6.4.5"
+                        },
+                        {
+                            "id": "8",
+                            "title": "Contact: ",
+                            "description": "name manager or personnel officer",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.1.1", "endDate": "F5.1.1"},
+                            "expectedValue": "F5.6.4.6"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"3",
+            "title": "Educational and professional qualifications",
+            "description": "SC_Abilities_3_(Education)",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "1",
+                    "title": "Educational qualifications",
+                    "requirements": [
+                        {
+                            "id":"1",
+                            "title": "Summary of the professional education and training:",
+                            "description": "description of qualification",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.6.5 (From)", "endDate": "F5.6.5 (To)"},
+                            "expectedValue": "F5.6.5 (Institution/Courses)"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "title": "professional qualifications",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "Summary of the professional experience over the last 10 years",
+                            "description": "Summary of the professional experience over the last 10 years, in reverse chronological order is provided below:",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.6.6 (From)", "endDate": "F5.6.6 (To)"},
+                            "expectedValue": "F5.6.6 (Institution/Courses)"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "title": "Tools, plant or technical equipment",
+            "description": "SC_Abilities_2_(Facilities,___)",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "1",
+                    "title": "Equipment Capacity",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title":"Equipment type and characteristics",
+                            "description": "description of equipment",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": "F5.7.1"
+                        },
+                        {
+                            "id": "2",
+                            "title": "Number",
+                            "description": "Number of equipment",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": "F5.7.2"
+                        },
+                        {
+                            "id": "3",
+                            "title": "Model",
+                            "description": "Model of equipment",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": "F5.7.3"
+                        },
+			{
+                            "id": "4",
+                            "title": "Year of manufacture",
+                            "description": "Year of manufacture of equipment",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+                        {
+                            "id": "5",
+                            "title": "Capacity",
+                            "description": "Capacity of equipment",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": "F5.7.4"
+                        },
+                        {
+                            "id": "6",
+                            "title": "Source",
+                            "description": "Source of equipment",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": "F5.7.5 (The following abbreviation shall be used: O – owned, R – rented, L- leased, SM – specially manufactured.)"
+                        },
+                        {
+                            "id": "7",
+                            "title": "Current location",
+                            "description": "Current location of equipment",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+                        {
+                            "id": "8",
+                            "title": "Details of current commitments",
+                            "description": "Details of current commitments for equipment",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+                        {
+                            "id": "9" ,
+                            "title": "Name of owner",
+                            "description": "Name of owner of equipment",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "title": "Manufacturing Capacity",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "Manufacturing lines and characteristics",
+                            "description": "description of Manufacturing lines",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": "F5.7.1"
+                        },
+                        {
+                            "id": "2",
+                            "title": "Number",
+                            "description": "Number of Manufacturing lines",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": "F5.7.2"
+                        },
+                        {
+                            "id": "3",
+                            "title": "Brief description",
+                            "description": "Brief description of Manufacturing lines",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": "F5.7.3"
+                        },
+                        {
+                            "id": "4",
+                            "title": "Capacity",
+                            "description": "Capacity of Manufacturing lines",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": "F5.7.4"
+                        },
+                        {
+                            "id": "5",
+                            "title": "Source",
+                            "description": "Source of Manufacturing lines",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": "F5.8.5 (The following abbreviation shall be used: O – owned, R – rented, L- leased, SM – specially manufactured.)"
+                        },
+                        {
+                            "id": "6",
+                            "title": "Year of installation",
+                            "description": "Year of installation of Manufacturing lines",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+                        {
+                            "id": "7",
+                            "title": "Current Status",
+                            "description": "Current Status of Manufacturing lines",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+                        {
+                            "id": "8",
+                            "title": "Current commitments",
+                            "description": "Current commitments for Manufacturing lines",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+                        {
+                            "id": "9",
+                            "title": "Type of access",
+                            "description": "Type of access for Manufacturing lines",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+                        {
+                            "id": "10",
+                            "title": "Details of current commitments",
+                            "description": "Details of current commitments for Manufacturing lines",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+                        {
+                            "id": "11",
+                            "title": "Name of Owner",
+                            "description": "Name of Owner of Manufacturing lines",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+                        {
+                            "id": "12",
+                            "title": "Address of Owner",
+                            "description": "Address of Owner of Manufacturing lines",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+                        {
+                            "id": "13",
+                            "title": "Name of Contact",
+                            "description": "Name of Contact of Manufacturing lines",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+                        {
+                            "id": "14",
+                            "title": "Title of Contact",
+                            "description": "Title of Contact of Manufacturing lines",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+                        {
+                            "id": "15",
+                            "title": "Telephone of Contact",
+                            "description": "Telephone of Contact of Manufacturing lines",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+                        {
+                            "id": "16",
+                            "title": "Fax of Contact",
+                            "description": "Fax of Contact of Manufacturing lines",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+                        {
+                            "id": "17",
+                            "title": "E-mail of Contact",
+                            "description": "E-mail of Contact of Manufacturing lines",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "title": "Technical facilities and measures for ensuring quality",
+            "description":"SC_Abilities_2_(Facilities,___)",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "Facility",
+                            "description": "description of facility",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "title": "Study and research facilities",
+            "description": "SC_Abilities_2_(Facilities,___)",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "Facility",
+                            "description": "description of facility",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "title": "Supply chain management",
+            "description": "SC_Abilities_2_(Facilities,___)",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "Supply chain management type",
+                            "description": "description of Supply chain management",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+                        {
+                            "id": "2",
+                            "title": "Supply chain management characteristics",
+                            "description": "description of Supply chain management",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "title": "Environmental management measures",
+            "description": "SC_Abilities_2_(Facilities,___)",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "Environmental management measures type",
+                            "description": "description of Environmental management measures",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        },
+	                {
+                            "id": "2",
+                            "title": "Environmental management measures characteristics",
+                            "description": "description of Environmental management measures",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "9",
+            "title": "performance of the specified type",
+            "description":"SC-References",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "1",
+                    "title1": "For works contracts: performance of works of the specified type",
+                    "title2": "For supply contracts: performance of deliveries of the specified type",
+                    "title": "For service contracts: performance of services of the specified type",
+                    "description": "SPECIFIC EXPERIENCE OF BIDDER",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "Name of contract",
+                            "description": "Name of contract",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.6.5 (From)", "endDate": "F5.6.5 (To)"},
+                            "expectedValue": "F5.3.1"
+                        },
+                        {
+                            "id": "2",
+                            "title": "Value in ",
+                            "description": "Value of contract",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.6.5 (From)", "endDate": "F5.6.5 (To)"},
+                            "expectedValue": "F5.3.2"
+                        },
+                        {
+                            "id": "3",
+                            "title": "Status",
+                            "description": "The following abbreviation shall be used: C – completed, O – ongoing.",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.6.5 (From)", "endDate": "F5.6.5 (To)"},
+                            "expectedValue": "F5.3.3"
+                        },
+                        {
+                            "id": "4",
+                            "title": "Role",
+                            "description": "The following abbreviation shall be used: MC - main contractor, LP - lead partner in a JVCA, acting as a main contractor, P - partner in a JVCA, acting as a main contractor, or SC – subcontractor.",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.6.5 (From)", "endDate": "F5.6.5 (To)"},
+                            "expectedValue": "F5.3.4"
+                        },
+                        {
+                            "id": "5",
+                            "title": "Similarity",
+                            "description": "The following abbreviation shall be used: M – similar magnitude, N – similar nature, C – similar complexity. The Applicants may use a composite abbreviation (for example MNC, which means that the stated contract is of similar magnitude, nature and complexity.",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.6.5 (From)", "endDate": "F5.6.5 (To)"},
+                            "expectedValue": "F5.3.5"
+                        },
+                        {
+                            "id": "6",
+                            "title": "Time for completion (months) ",
+                            "description": "Time for completion in (months) .",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.6.5 (From)", "endDate": "F5.6.5 (To)"},
+                            "expectedValue": "F5.3.6"
+                        },
+                        {
+                            "id": "7",
+                            "title": "Notes",
+                            "description": "The Applicant may list specialised works/supplies specific contractual data required for particular operations, listed in the PDS; or make any comments in respect of the contracts. ",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.6.5 (From)", "endDate": "F5.6.5 (To)"},
+                            "expectedValue": "F5.3.7"
+                        },
+                    ]
+                },
+                {
+                    "id": "2",
+                    "title1": "For works contracts: performance of works of the specified type",
+                    "title2": "For supply contracts: performance of deliveries of the specified type",
+                    "title3": "For service contracts: performance of services of the specified type",
+                    "description": "SPECIFIC EXPERIENCE OF JVCA PARTNER",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "Partner",
+                            "description": "Name of Partner",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.6.5 (From)", "endDate": "F5.6.5 (To)"},
+                            "expectedValue": "F5.4.1"
+                        },
+                        {
+                            "id": "2",
+                            "title": "Name of contract",
+                            "description": "Name of contract",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.6.5 (From)", "endDate": "F5.6.5 (To)"},
+                            "expectedValue": "F5.4.2"
+                        },
+                        {
+                            "id": "3",
+                            "title": "Value in ",
+                            "description": "Value of contract",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.6.5 (From)", "endDate": "F5.6.5 (To)"},
+                            "expectedValue": "F5.4.3"
+                        },
+                        {
+                            "id": "4",
+                            "title": "Status",
+                            "description": "The following abbreviation shall be used: C – completed, O – ongoing.",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.6.5 (From)", "endDate": "F5.6.5 (To)"},
+                            "expectedValue": "F5.4.4"
+                        },
+                        {
+                            "id": "5",
+                            "title": "Role",
+                            "description": "The following abbreviation shall be used: MC - main contractor, LP - lead partner in a JVCA, acting as a main contractor, P - partner in a JVCA, acting as a main contractor, or SC – subcontractor.",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.6.5 (From)", "endDate": "F5.6.5 (To)"},
+                            "expectedValue": "F5.4.5"
+                        },
+                        {
+                            "id": "6",
+                            "title": "Similarity",
+                            "description": "The following abbreviation shall be used: M – similar magnitude, N – similar nature, C – similar complexity. The Applicants may use a composite abbreviation (for example MNC, which means that the stated contract is of similar magnitude, nature and complexity.",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.6.5 (From)", "endDate": "F5.6.5 (To)"},
+                            "expectedValue": "F5.4.6"
+                        },
+                        {
+                            "id": "7",
+                            "title": "Time for completion (months) ",
+                            "description": "Time for completion in (months) .",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.6.5 (From)", "endDate": "F5.6.5 (To)"},
+                            "expectedValue": "F5.4.7"
+                        },
+                        {
+                            "id": "8",
+                            "title": "Notes",
+                            "description": "The Applicant may list specialised works/supplies specific contractual data required for particular operations, listed in the PDS; or make any comments in respect of the contracts. ",
+                            "dataType": "string",
+                            "period": {"startDate": "F5.6.5 (From)", "endDate": "F5.6.5 (To)"},
+                            "expectedValue": "F5.4.8"
+                        },
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "10",
+            "title": "For supply contracts: certificates by quality control institutes",
+            "description": "SC-Quality_assurance",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "For supply contracts: certificate by quality control institutes",
+                            "description": "Link to certificate of quality control insitutes (e.g. ISO)",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "11",
+            "title": "Certificates by independent bodies about quality assurance standards",
+            "description": "SC-Quality_assurance",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "Certificate by independent bodies about quality assurance standards",
+                            "description": "Link to certificate of independent body",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "12",
+            "title": "Certificates by independent bodies about environmental management systems or standards",
+            "description": "SC-Quality_assurance",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "Certificates by independent bodies about environmental management systems or standards",
+                            "description": "Link to certificate of independent body about environmental management systems or standards",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        }
+                    ]
+                }
+            ]
+        }
+        {
+            "id": "13",
+            "title": "Allowance of checks",
+            "description": "SC-Abilities_4_(Checks)",
+            "relatesTo": "tenderer",
+            "source": "tenderer",
+            "requirementGroups": [
+                {
+                    "id": "",
+                    "requirements": [
+                        {
+                            "id": "1",
+                            "title": "Allowance of checks",
+                            "description": "",
+                            "dataType": "string",
+                            "period": {"startDate": "", "endDate": ""},
+                            "expectedValue": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
